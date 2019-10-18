@@ -1,0 +1,2 @@
+class SecureUploader < Shrine
+end

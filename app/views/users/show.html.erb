@@ -7,7 +7,7 @@
 
 <p>
   <strong>Photo data:</strong>
-  <%= @user.photo_data %>
+  <%= image_tag @user.photo.derivation_url(:thumbnail, 100, 100) %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

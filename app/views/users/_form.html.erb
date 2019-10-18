@@ -17,8 +17,9 @@
   </div>
 
   <div class="field">
-    <%= form.label :photo_data %>
-    <%= form.text_area :photo_data %>
+    <%= form.label :photo %>
+    <%= form.hidden_field :photo, value: user.cached_photo_data %>
+    <%= form.file_field :photo %>
   </div>
 
   <div class="actions">
